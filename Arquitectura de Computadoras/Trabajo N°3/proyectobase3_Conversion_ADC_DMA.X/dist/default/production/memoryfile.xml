@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <executable name="dist/default/production/proyectobase3_Conversion_ADC_DMA.X.production.elf">
+    <memory name="data">
+      <units>bytes</units>
+      <length>30720</length>
+      <used>54</used>
+      <free>30666</free>
+    </memory>
+    <memory name="program">
+      <units>bytes</units>
+      <length>261888</length>
+      <used>1263</used>
+      <free>260625</free>
+    </memory>
+  </executable>
+</project>

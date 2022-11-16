@@ -1,0 +1,68 @@
+## SCL Builder Setup File: Do not edit!!
+
+## VERSION: MPLAB X
+## FORMAT:  v2.00.01
+## DEVICE:  DSPIC33FJ256GP710A
+
+## PINREGACTIONS
+cyc
+No Repeat
+--
+&
+## ADVPINREGACTIONS
+--
+&
+--
+COND2
+Any
+
+
+
+0
+cyc
+
+--
+&
+## CLOCK
+&
+## STIMULUSFILE
+
+ADC1BUF0
+Demand
+0
+2
+C:\Users\feder\Desktop\Cosas importantes\UNIVERSIDAD\segundo año\Arquitectura de computadoras\Trabajo N°3\proyectobase3a.X\ADC1_Values.txt
+Hex
+Yes
+
+--
+&
+## RESPONSEFILE
+&
+## ASYNCH
+Pin
+RD6
+Toggle
+
+
+-1
+--
+Pin
+RD7
+Toggle
+
+
+-1
+--
+Pin
+RD13
+Toggle
+
+
+-1
+--
+&
+## ADVANCEDSCL
+
+1
+&
