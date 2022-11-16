@@ -1,0 +1,44 @@
+void config_puertos1 (void) {
+		TRISAbits.TRISA4 = 0; /*salida*/
+		TRISAbits.TRISA5 = 0;
+		TRISDbits.TRISD12 = 1; /*entrada*/
+		TRISDbits.TRISD13 = 1;       
+		PORTAbits.RA4 = 0;   /* leds*/
+		PORTAbits.RA5 = 0;    
+		}
+
+
+	void Prog1(void) {
+	
+		config_puertos1();
+	
+		while (1) {
+		
+		if ( PORTDbits.RD12 == 0 )  //pulsador
+			{
+				PORTAbits.RA4 = 1;  //led
+			}
+		else 
+			{
+				PORTAbits.RA4 = 0;
+			}
+		if ( PORTDbits.RD13 == 0 )
+			{
+				PORTAbits.RA5 = 1;
+			}
+		else 
+			{
+				PORTAbits.RA5 = 0;
+			}
+		}	
+
+	}
+
+
+	int main(void) {
+		
+        AD1PCFGH = 0xFFFF;
+		AD1PCFGL = 0xFFFF;
+
+	Prog1();
+    }
