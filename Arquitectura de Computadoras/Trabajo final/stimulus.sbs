@@ -1,0 +1,47 @@
+## SCL Builder Setup File: Do not edit!!
+
+## VERSION: MPLAB X
+## FORMAT:  v2.00.01
+## DEVICE:  DSPIC33FJ256GP710
+
+## PINREGACTIONS
+cyc
+No Repeat
+--
+&
+## ADVPINREGACTIONS
+--
+&
+--
+COND1
+Any
+
+
+
+0
+cyc
+
+--
+&
+## CLOCK
+&
+## STIMULUSFILE
+
+U2RXREG
+Message
+0
+2
+C:\Users\Ouros\OneDrive - mi.unc.edu.ar\Escritorio\Entrega\TP_Final\UARTin.txt
+Pkt
+Yes
+
+--
+&
+## RESPONSEFILE
+&
+## ASYNCH
+&
+## ADVANCEDSCL
+
+1
+&
